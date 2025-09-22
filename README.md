@@ -38,7 +38,7 @@ A full-stack application for intelligent FAQ retrieval with scoring-based matchi
 ### 1. Clone and Install Dependencies
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:kaijie1023/faq-retrieval.git
 cd faq-retrieval
 
 # Install backend dependencies

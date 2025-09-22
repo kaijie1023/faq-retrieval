@@ -52,7 +52,7 @@ npm install
 
 ### 2. Database Setup
 
-Create a PostgreSQL database and configure environment variables:
+Create a PostgreSQL database and configure environment variables in backend/.env:
 
 ```bash
 # Backend environment variables (create backend/.env)

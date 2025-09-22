@@ -52,20 +52,33 @@ npm install
 
 ### 2. Database Setup
 
-Create a PostgreSQL database and configure environment variables in backend/.env:
+Create a PostgreSQL database and configure environment variables:
 
 ```bash
-# Backend environment variables (create backend/.env)
-DB_TYPE=postgres
-DB_HOST=localhost
-DB_PORT=5432
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
-DB_NAME=faq_retrieval
+cd backend
+
+# Copy the example environment file
+cp .env.example .env
+```
+
+Open `backend/.env` and update the database credentials:
+
+```bash
+# Backend environment variables (backend/.env)
 NODE_ENV=development
 PORT=3001
+
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=your_username        # Update with your PostgreSQL username
+DB_PASSWORD=your_password        # Update with your PostgreSQL password
+DB_NAME=faq_retrieval            # Update with your database name
+DB_TYPE=postgres
+
 CLIENT_URL=http://localhost:3000
 ```
+
+> **Important:** Make sure to update `DB_USERNAME`, `DB_PASSWORD`, and `DB_NAME` with your actual PostgreSQL database credentials.
 
 ### 3. Database Migration and Seeding
 
